@@ -1,0 +1,6 @@
+@ReadMango.APi_HostAddress = http://localhost:5074
+
+GET {{ReadMango.APi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

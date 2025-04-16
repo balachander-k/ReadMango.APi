@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ReadMango.APi.Models;
-using ReadMango.APi.Models.DTO;
 
 namespace ReadMango.APi.Data
 {
@@ -17,6 +16,10 @@ namespace ReadMango.APi.Data
         public DbSet<CartItem> CartItems { get; set; }
 
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+
+        public DbSet<OrderDetails> OrderDetails { get; set; }
+
+        public DbSet<OrderHeader> OrderHeaders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
